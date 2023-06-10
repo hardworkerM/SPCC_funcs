@@ -1,16 +1,16 @@
 # Реализация функций корреляции и представление в виде SPSS
 
-Программный разрабатывался для друзей не знакомых с программированием когда были проблемы с доступом в SPSS.\
-Позволяет написан на python, при использовании библиотек scipy, python и позволяет посчитать корреляции 
-Спирамана, Пирсона, Кендалла как между двумя признаками так и множественные.\
+Программный код разрабатывался для друзей, не знакомых с программированием, во времена проблем с доступом в SPSS.\
+Функции написаны на python, при использовании библиотек scipy и pandas. Позволяет посчитать корреляции 
+Спирмана, Пирсона, Кендалла как между двумя признаками так и множественные.
 
 Визуализация данных в табличном виде, имитирующем работу SPSS.
 
-<img src='https://github.com/hardworkerM/SPSS_funcs/blob/main/one_one_corr.png'>
+<img src='https://github.com/hardworkerM/SPSS_funcs/blob/main/one_one_corr.png' width="500"/>
 
 Также и множественная корреляция
 
-<img src='https://github.com/hardworkerM/SPSS_funcs/blob/main/mulri_corr.png'>
+<img src='https://github.com/hardworkerM/SPSS_funcs/blob/main/mulri_corr.png' width="500"/>
 
 ## Установка
 
@@ -25,8 +25,12 @@ git clone https://github.com/hardworkerM/SPSS_funcs.git
 pip install -r requirements.txt
 ```
 
-Так как функции работают с pd.DataFrame, то перенесите файл с информацией в папку с кодом и в отдельной строке \
+Функции принимают данные в таблице типа pd.DataFrame\
+Поэтому для использования сделайте следующие действия:
+
+Введите путь до файла с данными:\
 <code>file_name = 'your_file.csv"</code> \
+Создайте объект класса pd.DataFrame:\
 <code>df = pd.read_csv(file_name)</code>
 
 
